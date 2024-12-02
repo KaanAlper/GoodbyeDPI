@@ -9,15 +9,10 @@ It handles DPI connected using optical splitter or port mirroring (**Passive DPI
 
 # Quick start
 
-* **For Russia**: Download [latest version from Releases page](https://github.com/ValdikSS/GoodbyeDPI/releases), unpack the file and run **1_russia_blacklist_dnsredir.cmd** script.
-* For other countries: Download [latest version from Releases page](https://github.com/ValdikSS/GoodbyeDPI/releases), unpack the file and run **2_any_country_dnsredir.cmd**.
-
+Download [latest version from Releases page](https://github.com/KaanAlper/GoodbyeDPI/releases), unpack the file and run **dnsredir-blacklist.cmd**.
+For adding sites blocked in your country open Blacklistadd.exe file and there will be introduction to set up in app
 These scripts launch GoodbyeDPI in recommended mode with DNS resolver redirection to Yandex DNS on non-standard port (to prevent DNS poisoning).  
 If it works — congratulations! You can use it as-is or configure further.
-
-# How to use
-
-Download [latest version from Releases page](https://github.com/ValdikSS/GoodbyeDPI/releases) and run.
 
 ## Supported arguments
 To get relevant information about your version of the program, use the -h (--help) argument at startup.
