@@ -126,7 +126,8 @@ def add_text(file_path):
     """Function to add text to a text file."""
     print(f"Sites will be saved to the {file_path} file.")
     while True:
-        text = input("Enter the site name (e.g., facebook.com) (type 'q' to quit): ")
+        print("Enter the site name (e.g., facebook.com)  Dont write prename like 'www.'")
+        text = input("(type 'q' to quit): ")
         if text.lower() == 'q':
             break
 
@@ -190,6 +191,6 @@ if __name__ == "__main__":
     # If the configration file doesn't exist, get information from user and save it
     if not goodbydpiexe or not dnsredirblacklist or not v2rayexe or not blacklisttxt:
         blacklisttxt, v2rayexe, goodbydpiexe, dnsredirblacklist = initial_setup()
-        save_config_file(config_dosyasi, blacklisttxt, v2rayexe, goodbydpiexe, dnsredirblacklist)
+        save_config_file(config_file, blacklisttxt, v2rayexe, goodbydpiexe, dnsredirblacklist)
     add_text(blacklisttxt)
     close_and_restart_program(v2rayexe, goodbydpiexe, dnsredirblacklist)
