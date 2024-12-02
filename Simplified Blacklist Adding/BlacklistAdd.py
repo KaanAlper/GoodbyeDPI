@@ -135,7 +135,7 @@ def metin_ekle(dosya_yolu):
             else:
                 raise SystemExit("Please enter a true site name")
 
-            # I made it for all domains, because i found just using "*.name" or "name" is make it slower to loading times of sites
+            # I made it for all domains, because i found just using "*.sitename.com" or "sitename.com" is make it slower to loading times of sites
             new_text = "-cdn"
             new_text2 = "-media"
             new_yazi1=modified_yazi + new_text + extracted_yazi
