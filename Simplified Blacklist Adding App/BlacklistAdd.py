@@ -223,6 +223,6 @@ if __name__ == "__main__":
     # Eğer konfigürasyon dosyası yoksa, kullanıcıdan bilgi al ve kaydet
     if not goodbydpiexe or not dnsredirblacklist or not v2rayexe or not blacklisttxt or not forall:
         blacklisttxt,forall, v2rayexe, goodbydpiexe, dnsredirblacklist = ilk_ayar(v2rayexe, goodbydpiexe, dnsredirblacklist,forall,blacklisttxt)
-        config_dosyasini_kaydet(config_dosyasi, blacklisttxt,forall, v2rayexe, goodbydpiexe, dnsredirblacklist)
+        config_dosyasini_kaydet(config_dosyasi, blacklisttxt, v2rayexe, goodbydpiexe, dnsredirblacklist, forall)
     secim=metin_ekle(blacklisttxt)
     program_kapat_ve_ac(v2rayexe, goodbydpiexe, dnsredirblacklist,secim,forall)
